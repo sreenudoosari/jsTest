@@ -3,14 +3,9 @@ const mail = require('./mail');
 
 // Testing numbers 
 module.exports.absolute = function(number) {
-  if (number > 0) return number; 
-  if (number < 0) return -number; 
-  return 0; 
+  if (number >= 0) return number; 
+    return -number; 
 }
-
-
-
-
 
 // Testing strings 
 module.exports.greet = function(name) { 
@@ -19,7 +14,7 @@ module.exports.greet = function(name) {
 
 // Testing arrays 
 module.exports.getCurrencies = function() { 
-  return ['USD', 'AUD', 'EUR'];
+  return ['USD', 'INR',  'EUR'];
 }
 
 // Testing objects 
